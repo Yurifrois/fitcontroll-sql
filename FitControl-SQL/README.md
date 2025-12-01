@@ -7,13 +7,13 @@ O projeto integra modelagem conceitual, normalização e manipulação de dados 
 
 ## Estrutura do Projeto
 FitControl-SQL/
-│
-├── 01_create_tables.sql
-├── 02_insert.sql
-├── 03_select_queries.sql
-├── 04_update_delete.sql
-├── DER_FitControl_Completo.png
-└── README.md
+
+- 01_create_tables.sql
+- 02_insert.sql
+- 03_select_queries.sql
+- 04_update_delete.sql
+- DER_FitControl_Completo.png
+- README.md
 ---
 
 ## Descrição
