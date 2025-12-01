@@ -1,53 +1,39 @@
-FitControl-SQL/
-│
-├── 01_create_tables.sql
-├── 02_insert.sql
-├── 03_select_queries.sql
-├── 04_update_delete.sql
-├── README.md
-└── DER_FitControl_Completo.png
+FitControl – Banco de Dados Relacional
 
-Descrição dos Arquivos
-
-01_create_tables.sql
-Contém toda a estrutura do banco de dados, com criação das entidades, chaves primárias, estrangeiras e relacionamentos conforme o DER normalizado até 3FN.
-
-02_insert.sql
-Script responsável pelo povoamento inicial das tabelas com dados coerentes e adequados ao minimundo da academia FitControl.
-
-03_select_queries.sql
-Conjunto de consultas SQL utilizando comandos SELECT, incluindo:
-	•	Filtros com WHERE
-	•	Ordenação com ORDER BY
-	•	Limitação de resultados com LIMIT
-	•	Junções entre tabelas com JOIN
-	•	Agregações utilizando GROUP BY
-
-04_update_delete.sql
-Contém comandos UPDATE e DELETE com condições, garantindo manipulação correta dos dados e integridade referencial.
-
-DER_FitControl_Completo.png
-Diagrama Entidade-Relacionamento (DER) final, contendo entidades, atributos, chaves primárias, chaves estrangeiras e cardinalidades.
+Repositório contendo a implementação do banco de dados FitControl, desenvolvido para gerenciamento de alunos, planos, fichas de treino, exercícios e pagamentos.
+O projeto integra modelagem conceitual, normalização e manipulação de dados com SQL.
 
 ⸻
 
-Objetivo do Projeto
+Estrutura do Projeto
+/FitControl-SQL
+│
+├── 01_create_tables.sql          # Criação das tabelas e relacionamentos
+├── 02_insert.sql                 # Inserção dos dados iniciais
+├── 03_select_queries.sql         # Consultas SELECT (JOIN, WHERE, ORDER BY, LIMIT, GROUP BY)
+├── 04_update_delete.sql          # Comandos UPDATE e DELETE com condições
+├── DER_FitControl_Completo.png   # Diagrama Entidade-Relacionamento (DER)
+└── README.md                     # Documentação
 
-O FitControl representa um sistema de gestão acadêmica voltado para administração de alunos, planos, pagamentos, fichas de treino e exercícios. O propósito deste repositório é demonstrar a criação e manipulação de um banco de dados relacional funcional, utilizando boas práticas de modelagem e garantindo consistência lógica entre o modelo conceitual e o modelo físico.
+Descrição
+
+O FitControl é um sistema de banco de dados para academias, permitindo organizar informações sobre alunos, planos, pagamentos, fichas de treino e exercícios.
+O modelo foi normalizado até a 3FN e implementado em SQL com foco em consistência e integridade dos dados.
 
 ⸻
 
 Como Executar
-	1.	Execute o script 01_create_tables.sql para criar toda a estrutura do banco.
-	2.	Execute 02_insert.sql para inserir os dados iniciais.
-	3.	Utilize 03_select_queries.sql para realizar consultas.
-	4.	Aplique operações de atualização e exclusão com 04_update_delete.sql.
+	1.	Execute 01_create_tables.sql para criar as tabelas.
+	2.	Execute 02_insert.sql para inserir os dados.
+	3.	Utilize 03_select_queries.sql para consultas.
+	4.	Teste operações com 04_update_delete.sql.
 
-Os scripts podem ser executados em ferramentas como MySQL Workbench, DBeaver, ou PGAdmin (adaptando a sintaxe se necessário).
+Compatível com MySQL Workbench, DBeaver ou PGAdmin.
 
 ⸻
 
-Tecnologias Utilizadas
-	•	SQL (ANSI)
-	•	MySQL Workbench ou ferramenta equivalente
-	•	Diagramação em DER normalizado até 3FN
+Tecnologias
+	•	SQL
+	•	MySQL (ou equivalente)
+	•	Modelagem DER
+	•	Normalização até 3FN
